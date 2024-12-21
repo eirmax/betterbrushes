@@ -7,13 +7,11 @@ import com.eirmax.betterbrushes.item.Brushes.Gold_brush;
 import com.eirmax.betterbrushes.item.Brushes.Iron_brush;
 import com.eirmax.betterbrushes.item.Brushes.Netherite_brush;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class ModItems {
 

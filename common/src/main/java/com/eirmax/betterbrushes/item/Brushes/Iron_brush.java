@@ -33,7 +33,7 @@ import net.minecraft.world.World;
 
 public class Iron_brush extends BrushItem {
     public static final int ANIMATION_DURATION = 10;
-    private static final int MAX_BRUSH_TIME = 200;
+    private static final int MAX_BRUSH_TIME = 150;
 
     public Iron_brush(Item.Settings settings) {
         super(settings);
@@ -62,7 +62,7 @@ public class Iron_brush extends BrushItem {
             if (hitResult instanceof BlockHitResult blockHitResult) {
                 if (hitResult.getType() == Type.BLOCK) {
                     int i = this.getMaxUseTime(stack, user) - remainingUseTicks + 1;
-                    boolean bl = i % 10 == 5;
+                    boolean bl = i % 3 == 5;
                     if (bl) {
                         BlockPos blockPos = blockHitResult.getBlockPos();
                         BlockState blockState = world.getBlockState(blockPos);
